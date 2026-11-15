@@ -1,0 +1,32 @@
+تعليمات ربط الصور — اقرأها قبل التسليم
+
+1) اسم مجلد الصور الصحيح هو images (بحرف s)، وهو بجانب index.html و js و css.
+2) داخل images يجب أن توجد مجلدات Moon و Mars و Beyond.
+3) انسخ صور Moon و Mars إلى المجلدات المناسبة حسب الأسماء أدناه.
+
+Moon:
+- Apollo 11 Landing Site.jpg
+- Apollo 12 ALSEP.webp
+- Apollo Lunar Roving Vehicles.jpg
+- Surveyor3.jpg
+
+Mars:
+- Ingenuity.jpg
+- InSight.jpg
+- Opportunity.jpg
+- Phoenix.jpg
+- Sojourner.jpg
+- Spirit.jpg
+- Viking 1.jpg
+- Viking 2.gif
+
+مهم: الصور التالية ظهرت عندك بصيغة TIFF (.tif): Ingenuity, InSight, Opportunity, Phoenix, Spirit, Viking 1.
+معظم المتصفحات لا تعرض TIFF بشكل موثوق. افتح كل ملف .tif في Paint ثم File > Save as > JPEG picture، واحفظه بالاسم .jpg الموضح أعلاه داخل images/Mars.
+لا تغيّر اسم Viking 2.gif، فهو GIF ويمكن عرضه في المتصفح.
+
+4) في js/data.js قيمة image تكون المسار داخل images فقط، مثال:
+image: "Moon/Apollo 11 Landing Site.jpg"
+ولا تكتب images/ أو /images/ في قيمة image.
+5) app.js يضيف images/ تلقائياً ويستخدم المسار النسبي الصحيح في الصفحة الرئيسية والصفحات الداخلية.
+6) لم أضع أسماء صور افتراضية لمجلد Beyond لأن محتويات هذا المجلد لم تظهر في الصور التي أرسلتها. لذلك ستظهر الأيقونة مؤقتاً لعناصر Beyond بدلاً من صورة مكسورة. إذا وضعت صورها لاحقاً، أضف مساراتها داخل image في data.js.
+7) بعد نسخ الصور، شغّل index.html باستخدام Live Server واضغط Ctrl+F5.
